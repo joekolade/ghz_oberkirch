@@ -1,0 +1,14 @@
+#news {
+
+  h1 {
+    @include dax;
+
+    color: map-get($ghz-colors, base);
+
+    font-size: 7.6em;
+    /* font-weight: bold; */
+    margin-left: -3px;
+    padding-top: 0.32em;
+
+  }
+}

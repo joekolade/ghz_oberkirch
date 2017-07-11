@@ -1,0 +1,7 @@
+#
+# PageTS for GHZ Oberkirch
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ghz_oberkirch/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ghz_oberkirch/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ghz_oberkirch/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ghz_oberkirch/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">

@@ -1,0 +1,78 @@
+//
+// HEADER
+
+#header {
+  padding-top: 40px;
+
+  width: 100%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  h1 {
+    margin: 0;
+
+  }
+
+}
+
+#quickNavi {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  color: #919193;
+  list-style-type: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+
+  li {
+    float: left;
+    margin-left: 5px;
+    padding: 0;
+
+    &.emergency {
+      margin-right: 0 !important;
+
+      a {
+        display: block;
+        width: 127px;
+        height: 39px;
+        margin-top: 3px;
+        margin-right: -5px;
+        background: #fff url(../../images/emergency.jpg) top right no-repeat;
+      }
+
+      span {
+        display: none;
+      }
+    }
+    a:hover {
+      color: #444;
+    }
+  }
+
+  @include respond-to(small) {
+    top: 30px;
+  }
+
+}
+
+
+/* Logo */
+#header {
+  position: relative;
+  font-size: 1.4em;
+}
+
+#header h1 a {
+  display: block;
+}
+
+#header h1 span.alt {
+  display: none;
+}

@@ -1,0 +1,24 @@
+$hausschrift: "ff-dax-web-pro-condensed", Arial; // Via Typekit eingebunden
+
+
+$default-gap: 30px;
+
+$breakpoints: (
+    small: 767px,
+    medium: 992px,
+    large: 1200px
+);
+
+// usage:
+
+$ghz-colors: (
+  base: #b34f4d,
+  eg: red,
+  og1: blue,
+  og2: green,
+  og3: pink
+);
+
+// usage: map-get($ghz-colors, base);
+
+$hamburger-layer-color: map-get($ghz-colors, base);

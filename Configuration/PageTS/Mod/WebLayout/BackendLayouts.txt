@@ -1,0 +1,4 @@
+#
+# BACKENDLAYOUTS
+#
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ghz_oberkirch/Configuration/PageTS/Mod/WebLayout/BackendLayouts" extensions="txt">

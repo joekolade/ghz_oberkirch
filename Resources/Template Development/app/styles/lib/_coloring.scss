@@ -1,0 +1,67 @@
+/*
+ * farb indikation
+ *******************/
+
+/* background */
+.level_eg #content {
+  background-color: #f5f8e9;
+}
+
+.level_og1 #content {
+  background-color: #f3e8e8;
+}
+
+.level_og2 #content {
+  background-color: #f8eedf;
+}
+
+.level_og3 #content {
+  background-color: #fcf9e2;
+}
+
+/*
+   navigation & links & text
+*/
+
+#eg.floor ul li a {
+  color: white;
+}
+
+#og1.floor ul li a {
+  color: white;
+}
+
+#og2.floor ul li a {
+  color: white;
+}
+
+#og3.floor ul li a {
+  color: #aca026;
+}
+
+#eg_links .near a {
+  color: #881a22;
+}
+
+#eg.floor ul li.eg.active a, .floor ul li.eg .navSubtitle:hover {
+  color: #7e9046;
+}
+
+#og1.floor ul li.og1.active a, .floor ul li.og1 .navSubtitle:hover {
+  color: #c38c90;
+}
+
+#og2.floor ul li.og2.active a, .floor ul li.og2 .navSubtitle:hover {
+  color: #986917;
+}
+
+#og3.floor ul li.og3.active a, .floor ul li.og3 .navSubtitle:hover {
+  color: #fff;
+}
+
+#content a, #content h3,
+#content h4, #content .ci {
+  color: #881a22; /* dunkel-rot */
+  /* color: #e47d00; /* orange */
+  /* v2 */
+}

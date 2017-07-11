@@ -1,0 +1,29 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            ghz_oberkirch_default {
+                title = LLL:EXT:ghz_oberkirch/Resources/Private/Language/locallang.xlf:backend_layout.default
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:ghz_oberkirch/Resources/Private/Language/locallang.xlf:backend_layout.column.normal
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:ghz_oberkirch/Resources/Public/Images/BackendLayouts/default.png
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+
+//
+// Mobile menu
+
+.mobile-menu {
+  .top,
+  .bottom {
+    padding: $default-gap/2;
+  }
+  .top {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .bottom {}
+}
+
+
+// Menu trigger
+.toggle {
+
+  @include respond-to(small) {
+    display: none;
+  }
+}
