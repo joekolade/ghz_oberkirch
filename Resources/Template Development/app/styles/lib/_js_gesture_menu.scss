@@ -31,12 +31,6 @@ body.menu--open {
       }
     }
 
-    .bottom {
-      margin-top: 1em;
-      ul {
-        margin-bottom: 1em;
-      }
-    }
     p.header {
       margin-bottom: 0;
     }
@@ -55,7 +49,6 @@ body.menu--open {
 
 .app-menu {
     background-color: #ffffff;
-    color: #263238;
     position: fixed;
     max-width: 350px;
     width: 90%;

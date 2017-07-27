@@ -2,10 +2,9 @@
 // BASICS STYLES
 
 body {
-  color: #444444;
+  color: $base-color;
   font-size: 62.5%;
   line-height: 1.1;
-  font-family: Verdana, Arial, sans-serif;
   background-color: #fff;
 
   .mobile-menu,

@@ -11,14 +11,23 @@ $breakpoints: (
 
 // usage:
 
+$cyan: #10bbef;
+$rot: #ea5160;
+$gruen: #93bd55;
+$gelb: #fdc420;
+$grau: #878787;
+
 $ghz-colors: (
-  base: #b34f4d,
-  eg: red,
-  og1: blue,
-  og2: green,
-  og3: pink
+  base: $grau,
+  base-light: lighten($grau, 25%),
+  eg: $gelb,
+  og1: $rot,
+  og2: $cyan,
+  og3: $gruen
 );
 
 // usage: map-get($ghz-colors, base);
 
 $hamburger-layer-color: map-get($ghz-colors, base);
+
+$base-color: map-get($ghz-colors, base);

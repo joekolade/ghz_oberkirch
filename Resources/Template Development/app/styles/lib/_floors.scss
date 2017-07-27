@@ -1,0 +1,76 @@
+//
+// Floors
+//
+
+// Floors general
+div.floor {
+  h1 {
+    margin: 0.5em 0 0;
+  }
+  &:first-child,
+  &:nth-child(even) {
+    h1 {
+      text-align: right;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em;
+
+    li {
+
+    }
+    a {
+      padding: 0.5em;
+      display: inline-block;
+      color: inherit;
+    }
+  }
+
+}
+
+// Floors
+#eg,
+#eg_links {
+  h1 {
+    color: map-get($ghz-colors, eg);
+  }
+  ul {
+
+  background: map-get($ghz-colors, eg);
+  }
+}
+#eg_links {
+  margin-top: .5em;
+  h1 {
+    display: none;
+  }
+}
+#og1 {
+  h1 {
+    color: map-get($ghz-colors, og1);
+  }
+  ul {
+  color: white;
+  background: map-get($ghz-colors, og1);
+  }
+}
+#og2 {
+  h1 {
+    color: map-get($ghz-colors, og2);
+  }
+  ul {
+  color: white;
+  background: map-get($ghz-colors, og2);
+  }
+}
+#og3 {
+  h1 {
+    color: map-get($ghz-colors, og3);
+  }
+  ul {
+  color: white;
+  background: map-get($ghz-colors, og3);
+  }
+}

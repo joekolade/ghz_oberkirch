@@ -10,9 +10,9 @@
 // Fetch fonts
 @import "lib/coloring";
 
-// Menu
+// Parts
 @import "lib/js_gesture_menu";
-// Menu
+@import "lib/floors";
 @import "lib/mobile_navigation";
 @import "lib/navigation";
 
@@ -36,7 +36,6 @@
 body {
   background: #fafafa;
   //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
   margin: 0;
 }
 
