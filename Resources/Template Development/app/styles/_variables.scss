@@ -1,6 +1,6 @@
 $hausschrift: "ff-dax-web-pro-condensed", Arial; // Via Typekit eingebunden
 
-
+$font-base: 1.4em;
 
 $breakpoints: (
     small: 767px,
@@ -33,6 +33,7 @@ $grau: #878787;
 $ghz-colors: (
   base: $grau,
   base-light: lighten($grau, 25%),
+  base-lighter: #f2f2f2,
   eg: $gelb,
   og1: $rot,
   og2: $cyan,
