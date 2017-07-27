@@ -1,5 +1,10 @@
 //
 // BASICS STYLES
+//
+
+*, html {
+  box-sizing: border-box;
+}
 
 body {
   color: $base-color;
@@ -41,8 +46,4 @@ a:hover {
 
 #content {
   background-color: #e7e7e4;
-}
-
-.wrapper {
-  padding: $default-gap / 2;
 }

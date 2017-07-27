@@ -28,6 +28,22 @@ div.floor {
     }
   }
 
+  @include respond-to(small){
+      h1 {
+        text-align: right;
+      }
+  }
+
+  @include respond-to(medium){
+
+    ul {
+      min-height: $floor-height;
+      max-height: $floor-height;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 // Floors
@@ -45,6 +61,10 @@ div.floor {
   margin-top: .5em;
   h1 {
     display: none;
+  }
+
+  @include respond-to(small){
+    margin-top: 0;
   }
 }
 #og1 {

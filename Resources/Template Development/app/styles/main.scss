@@ -2,6 +2,7 @@
 // Fetch vars + mixins
 @import "variables";
 @import "lib/mixins";
+@import "lib/grid";
 
 // Fetch fonts
 @import "lib/fonts";
@@ -15,6 +16,7 @@
 @import "lib/floors";
 @import "lib/mobile_navigation";
 @import "lib/navigation";
+@import "lib/content";
 @import "lib/footer";
 
 // Header

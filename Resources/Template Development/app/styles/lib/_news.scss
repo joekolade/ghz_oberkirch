@@ -18,5 +18,10 @@
       font-size: 7.6em;
     }
   }
+
+  @include respond-to(medium) {
+    height: $floor-height * 3 + $default-gap * 2;
+    min-height: 100%;
+  }
 }
 

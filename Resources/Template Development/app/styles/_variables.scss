@@ -1,13 +1,26 @@
 $hausschrift: "ff-dax-web-pro-condensed", Arial; // Via Typekit eingebunden
 
 
-$default-gap: 30px;
 
 $breakpoints: (
     small: 767px,
     medium: 992px,
     large: 1200px
 );
+
+
+$default-gap: 15px;
+$floor-height: 139px;
+$header-height: 80px;
+$footer-height: $header-height;
+
+$grid-gap: $default-gap;
+$col-count: 5;
+$grid-col: 180px;
+$grid-first-col: $grid-col;
+$grid-double-col: $grid-col * 2 + $grid-gap;
+
+$max-width: ($grid-col * $col-count) + ($grid-gap * ($col-count - 1));
 
 // usage:
 

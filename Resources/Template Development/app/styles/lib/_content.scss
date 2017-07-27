@@ -1,0 +1,7 @@
+//
+// Content
+//
+#content {
+  @include respond-to(small) {
+  }
+}
