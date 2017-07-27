@@ -3,12 +3,6 @@
 //
 
 .footer {
-  //font-size: 1.1em;
-  //  clear: both;
-  //height: 55px;
-  //top: 306px;
-  //position: relative;
-  //left: 0;
 
   .footerInner {
     position: relative;
@@ -39,5 +33,24 @@
     //top: 15px;
     //right: 5px;
     //text-align: right;
+  }
+
+  @include respond-to(small) {
+    .footerInner {
+      span {
+
+        &:before {
+          content: '|';
+          padding: 0 0.5em;
+        }
+
+        &:last-child:before {
+          display: inline-block;
+        }
+        &.copyright {
+          display: inline-block;
+        }
+      }
+    }
   }
 }
