@@ -137,13 +137,7 @@ div.floor {
   background-color: #e7e7e4;
 }
 
-#footer {
-  clear: both;
-  position: relative;
-  height: 55px;
-  top: 306px;
-  left: 0;
-}
+
 
 /* geänderte Breite wenn auf Inhaltsseite */
 
@@ -162,9 +156,6 @@ div.inhalt #content {
   padding: 10px;
 }
 
-div.inhalt #footer {
-  top: 0;
-}
 
 /*-  HEADER
 ----------------------------------------------------------------------*/
@@ -447,24 +438,7 @@ ul#quickNavi {
   margin-left: 65px;
 }
 
-/*-  FOOTER
-----------------------------------------------------------------------*/
-#footer {
-  clear: both;
-  font-size: 1.1em;
-}
 
-#footerInner {
-  position: relative;
-  padding: 15px 5px;
-}
-
-#footerInner .copyright {
-  position: absolute;
-  top: 15px;
-  right: 5px;
-  text-align: right;
-}
 
 /*
  * farb indikation
@@ -591,9 +565,6 @@ body.high div.inhalt #content {
   height: 579px;
 }
 
-body.high div.inhalt #footer {
-  top: auto;
-}
 
 /* allgemein .scroll */
 #content {

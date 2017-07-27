@@ -1,0 +1,43 @@
+//
+// Footer
+//
+
+.footer {
+  //font-size: 1.1em;
+  //  clear: both;
+  //height: 55px;
+  //top: 306px;
+  //position: relative;
+  //left: 0;
+
+  .footerInner {
+    position: relative;
+    padding: 15px 5px;
+    text-align: center;
+
+    span {
+
+      &:before {
+      content: '|';
+      padding: 0 0.5em;
+      }
+      &:first-child:before,
+      &:last-child:before {
+        display: none;
+      }
+
+      a {
+        display: inline-block;
+        padding: 0.5em 0;
+      }
+    }
+  }
+
+  .copyright {
+    display: block;
+    //position: absolute;
+    //top: 15px;
+    //right: 5px;
+    //text-align: right;
+  }
+}
