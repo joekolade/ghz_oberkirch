@@ -1,5 +1,5 @@
 #news {
-
+  margin-bottom: $default-gap;
   h1 {
     @include dax;
 
@@ -16,9 +16,13 @@
 
   .news-latest-item {
     background: map_get($ghz-colors, base-lighter);
+    padding: .5em;
+    padding-top: 1em;
   }
 
   @include respond-to(small) {
+    margin-bottom: 0;
+
     h1 {
       font-size: 7.6em;
     }
@@ -27,6 +31,7 @@
   @include respond-to(medium) {
     height: $floor-height * 3 + $default-gap * 2;
     min-height: 100%;
+
     #newsInner {
       position: relative;
     }
@@ -46,7 +51,6 @@
       width: 100%;
       height: $floor-height * 2 + $grid-gap;
       margin-top: 0;
-      padding-top: 1em;
     }
   }
 }
