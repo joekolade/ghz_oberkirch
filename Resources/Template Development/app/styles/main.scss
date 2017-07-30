@@ -1,28 +1,22 @@
 
-// Fetch vars + mixins
+// vars + mixins + grid
 @import "variables";
 @import "lib/mixins";
-@import "lib/grid";
-
-// Fetch fonts
-@import "lib/fonts";
-// Fetch fonts
-@import "lib/basic";
-// Fetch fonts
-@import "lib/coloring";
+@import "lib/css_grid";
 
 // Parts
+@import "lib/basic";
+@import "lib/fonts";
+
 @import "lib/js_gesture_menu";
 @import "lib/floors";
 @import "lib/mobile_navigation";
+@import "lib/header";
 @import "lib/navigation";
 @import "lib/content";
+@import "lib/news";
 @import "lib/footer";
 
-// Header
-@import "lib/header";
-// News
-@import "lib/news";
 
 // bower:scss
 @import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
@@ -37,8 +31,7 @@
 }
 
 body {
-  background: #fafafa;
-  //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: $body-bg;
   margin: 0;
 }
 

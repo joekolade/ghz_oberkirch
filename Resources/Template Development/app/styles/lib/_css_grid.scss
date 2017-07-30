@@ -1,3 +1,20 @@
+
+/*-  DEV
+----------------------------------------------------------------------*/
+.wrapper,
+#og3,
+#og2,
+#og1,
+#eg,
+#eg_links,
+#news,
+#content,
+.footer
+{
+  //outline: 1px solid tomato;
+}
+
+
 .wrapper {
   padding: $default-gap;
 
@@ -44,8 +61,6 @@
     grid-template-rows: $header-height $floor-height $floor-height $floor-height $floor-height $footer-height;
     grid-template-columns: $grid-first-col $grid-double-col $grid-double-col;
 
-    outline: 1px solid tomato;
-
     #header,
     #navigation,
     #news,
@@ -74,11 +89,8 @@
       #og1,
       #eg,
       #eg_links {
-        outline: 1px solid black;
         overflow: hidden;
-        h1 {
-          display: none;
-        }
+
       }
 
       #og3 {
@@ -105,20 +117,21 @@
     }
 
     #news {
-      outline: 1px solid tomato;
       grid-column: 1 / 2;
       grid-row: 2 / 4;
     }
     #content {
-      outline: 1px solid lime;
       grid-column: 2 / 3;
       grid-row: 3 / 5;
     }
     .footer {
-      outline: 1px solid pink;
       grid-column: 1 / 4;
       grid-row: 6 / 7;
     }
   }
+}
+
+.content .wrapper {
+  
 }
 

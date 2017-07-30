@@ -11,7 +11,7 @@ $breakpoints: (
 
 $default-gap: 15px;
 $floor-height: 139px;
-$header-height: 80px;
+$header-height: 100px;
 $footer-height: $header-height;
 
 $grid-gap: $default-gap;
@@ -39,9 +39,14 @@ $ghz-colors: (
   og2: $cyan,
   og3: $gruen
 );
-
 // usage: map-get($ghz-colors, base);
+
+$color-link: map_get($ghz-colors, og1);
+$color-header: map_get($ghz-colors, og1);
+
+
+$body-bg: #ffffff;
 
 $hamburger-layer-color: map-get($ghz-colors, base);
 
-$base-color: map-get($ghz-colors, base);
+$base-color: darken(map-get($ghz-colors, base), 15%);

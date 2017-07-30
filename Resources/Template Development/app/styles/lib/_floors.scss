@@ -2,8 +2,12 @@
 // Floors
 //
 
+//
 // Floors general
+
 div.floor {
+  min-height: $floor-height;
+
   h1 {
     margin: 0.5em 0 0;
   }
@@ -18,6 +22,8 @@ div.floor {
     margin: 0;
     padding: 0.5em;
 
+    color: white;
+
     li {
 
     }
@@ -28,69 +34,174 @@ div.floor {
     }
   }
 
-  @include respond-to(small){
-      h1 {
-        text-align: right;
-      }
+  @include respond-to(small) {
+    position: relative;
+    margin-bottom: 1em;
+
+    h1 {
+      text-align: right;
+      color: rgba(255, 255, 255, 0.35) !important;
+      position: absolute;
+      font-size: 3.2em;
+
+      right: .2em;
+      top: .2em;
+      margin: 0;
+
+    }
   }
 
-  @include respond-to(medium){
+  @include respond-to(medium) {
 
-    ul {
-      min-height: $floor-height;
-      max-height: $floor-height;
-      margin-top: 0;
-      margin-bottom: 0;
+    h1 {
+      line-height: 1;
+      font-size: 3.9em;
+      font-weight: bold;
     }
   }
 
 }
 
-// Floors
-#eg,
+
+//
+// Floors special
+
 #eg_links {
+  .app-menu-container & {
+    display: none;
+  }
+}
+.app-menu-container {
+
+  #eg,
+  #eg_links,
+  #og1,
+  #og2,
+  #og3 {
+    background: white;
+  }
+}
+
+#eg {
+  background: map-get($ghz-colors, eg);
+
   h1 {
     color: map-get($ghz-colors, eg);
   }
-  ul {
 
-  background: map-get($ghz-colors, eg);
+  ul {
+    background: map-get($ghz-colors, eg);
+  }
+
+  @include respond-to(medium) {
+    h1 {
+      right: 35px;
+      bottom: -11px;
+      top: auto;
+    }
+    ul {
+      margin-left: $grid-col * 2 + $grid-gap * 3;
+    }
   }
 }
+
 #eg_links {
+  background: map-get($ghz-colors, eg);
   margin-top: .5em;
   h1 {
+    color: map-get($ghz-colors, eg);
     display: none;
   }
 
-  @include respond-to(small){
+  ul {
+    background: map-get($ghz-colors, eg);
+  }
+
+  @include respond-to(small) {
     margin-top: 0;
+    display: none;
+  }
+
+  @include respond-to(medium) {
+    display: block;
+
+    h1 {
+      display: block;
+      right: auto;
+      left: 5px;
+      top: auto;
+      bottom: -11px;
+    }
   }
 }
+
 #og1 {
+  background: map-get($ghz-colors, og1);
+
   h1 {
     color: map-get($ghz-colors, og1);
   }
+
   ul {
-  color: white;
-  background: map-get($ghz-colors, og1);
+    background: map-get($ghz-colors, og1);
+  }
+
+  @include respond-to(medium) {
+    h1 {
+      //right: 35px;
+      left: $grid-col;
+      top: auto;
+      bottom: -11px;
+      text-align: left;
+    }
   }
 }
+
 #og2 {
+  background: map-get($ghz-colors, og2);
+
   h1 {
     color: map-get($ghz-colors, og2);
   }
+
   ul {
-  color: white;
-  background: map-get($ghz-colors, og2);
+    background: map-get($ghz-colors, og2);
+  }
+
+  @include respond-to(medium) {
+    h1 {
+      //left: 12px;
+      left: 72px;
+      top: auto;
+      bottom: -11px;
+      text-align: left;
+    }
+    ul {
+      margin-left: $grid-col;
+    }
   }
 }
+
 #og3 {
+  background: map-get($ghz-colors, og3);
+
   h1 {
     color: map-get($ghz-colors, og3);
   }
+
   ul {
-  color: white;
-  background: map-get($ghz-colors, og3);
+    background: map-get($ghz-colors, og3);
+  }
+
+  @include respond-to(medium) {
+    h1 {
+      right: auto;
+      left: 485px;
+      top: auto;
+      bottom: -11px;
+    }
+    ul {
+      margin-left: 474px;
+    }
   }
 }
