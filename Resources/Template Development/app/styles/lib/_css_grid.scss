@@ -1,28 +1,9 @@
-
-/*-  DEV
-----------------------------------------------------------------------*/
-.wrapper,
-#og3,
-#og2,
-#og1,
-#eg,
-#eg_links,
-#news,
-#content,
-.footer
-{
-  //outline: 1px solid tomato;
-}
-
+//
+// Grids
+//
 
 .wrapper {
   padding: $default-gap;
-
-  //$default-gap: 15px;
-  //$floor-height: 139px;
-  //$header-height: 80px;
-  //$footer-height: $header-height;
-  //$medium-col: 365px;
 
   @include respond-to(small) {
     display: grid;
@@ -64,9 +45,12 @@
     #header,
     #navigation,
     #news,
-    #content,
     .footer {
       overflow: hidden;
+    }
+
+    #content {
+      overflow: scroll;
     }
 
     #header {
@@ -132,6 +116,28 @@
 }
 
 .content .wrapper {
-  
-}
 
+  @include respond-to(medium) {
+
+    grid-template-columns: $grid-first-col $grid-double-col*1.3 $grid-double-col*0.7;
+
+    #navigation {
+
+      grid-template-columns: $grid-first-col $grid-double-col*1.3 $grid-double-col*0.7;
+
+      #eg {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+      }
+
+      #og3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+    }
+
+    #content {
+      grid-row: 2 / -2;
+    }
+  }
+}
