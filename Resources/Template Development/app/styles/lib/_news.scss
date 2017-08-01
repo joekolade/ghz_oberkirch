@@ -9,8 +9,8 @@
     /* font-weight: bold; */
     margin-left: -3px;
     padding-top: 0.32em;
-    margin-top: .3em;
-    margin-bottom: .25em;
+    margin-top: 0 ;
+    margin-bottom: 0;
 
   }
 
@@ -24,7 +24,7 @@
     margin-bottom: 0;
 
     h1 {
-      font-size: 7.6em;
+      font-size: 4.6em;
     }
   }
 
@@ -37,8 +37,8 @@
     }
 
     h1 {
-      font-size: 4em;
       position: absolute;
+      font-size: 4em;
       top: $floor-height + $grid-gap;
       margin-top: -1.1em;
       line-height: 1;
@@ -51,6 +51,14 @@
       width: 100%;
       height: $floor-height * 2 + $grid-gap;
       margin-top: 0;
+    }
+  }
+
+  .content & {
+    display: none;
+
+    @include respond-to(small) {
+      display: block;
     }
   }
 }
