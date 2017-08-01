@@ -66,7 +66,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
       removeComments: true,
       removeEmptyAttributes: true,
       removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true
+      removeStyleLinkTypeAttributebows: true
     })))
     .pipe(gulp.dest('dist'));
 });
@@ -185,7 +185,7 @@ gulp.task('typo3', ['t3copyStyles'], () => {
     gulp.start('t3copyJs');
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'typo3'], () => {
+gulp.task('build', ['lint', 'images', 'fonts', 'extras', 'typo3'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

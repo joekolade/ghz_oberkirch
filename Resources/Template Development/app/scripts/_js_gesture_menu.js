@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     var trackableElement;
-    var menu = document.querySelector(".mobile-menu");
-    var appMenu = document.querySelector(".app-menu-container");
-    var overlay = document.querySelector(".menu-background");
-    var buttons = document.querySelectorAll(".menu-toggle");
+    var menu = document.querySelector('.mobile-menu');
+    var appMenu = document.querySelector('.app-menu-container');
+    var overlay = document.querySelector('.menu-background');
+    var buttons = document.querySelectorAll('.menu-toggle');
 
     var touchingElement = false;
     var startTime;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var lastX = 0;
     var lastY = 0;
     var moveX = 0; // where in the screen is the menu currently
-    var dragDirection = "";
+    var dragDirection = '';
     var maxOpacity = 0.5; // in case if you want to change this, don"t forget to change the value of the opacity in the css class .menu--visible .menu-background
 
     var init = function(element, start, move, end) {
@@ -30,14 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     var addEventListeners = function() {
-        trackableElement.addEventListener("touchstart", onTouchStart, false);
-        trackableElement.addEventListener("touchmove", onTouchMove, false);
-        trackableElement.addEventListener("touchend", onTouchEnd, false);
+        trackableElement.addEventListener('touchstart', onTouchStart, false);
+        trackableElement.addEventListener('touchmove', onTouchMove, false);
+        trackableElement.addEventListener('touchend', onTouchEnd, false);
 
 
-        overlay.addEventListener("click", closeMenuOverlay, false); // I want to be able to click the overlay and immediately close the menu (in the space between the actual menu and the page behind it)
+        overlay.addEventListener('click', closeMenuOverlay, false); // I want to be able to click the overlay and immediately close the menu (in the space between the actual menu and the page behind it)
         buttons.forEach(function(button){
-          button.addEventListener("click", clickOpenMenu, false); // I want to be able to click the buttons and immediately open the menu
+          button.addEventListener('click', clickOpenMenu, false); // I want to be able to click the buttons and immediately open the menu
         });
     };
 
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     function touchStart(startX, startY) {
-        var menuOpen = document.querySelector(".mobile-menu.menu--visible");
+        var menuOpen = document.querySelector('.mobile-menu.menu--visible');
 
         if (menuOpen !== null) {
             isOpen = true;
@@ -88,11 +88,11 @@ document.addEventListener("DOMContentLoaded", function() {
             isOpen = false;
         }
 
-        menu.classList.add("no-transition");
-        appMenu.classList.add("no-transition");
+        menu.classList.add('no-transition');
+        appMenu.classList.add('no-transition');
 
         isMoving = true;
-        menuWidth = document.querySelector(".app-menu").offsetWidth;
+        menuWidth = document.querySelector('.app-menu').offsetWidth;
         lastX = startX;
         lastY = startY;
 
@@ -102,21 +102,21 @@ document.addEventListener("DOMContentLoaded", function() {
             moveX = -menuWidth;
         }
 
-        dragDirection = "";
-        menu.classList.add("menu--background-visible");
+        dragDirection = '';
+        menu.classList.add('menu--background-visible');
     }
 
     function touchMove(evt, currentX, currentY, translateX, translateY) {
         if (!dragDirection) {
             if (Math.abs(translateX) >= Math.abs(translateY)) {
-                dragDirection = "horizontal";
+                dragDirection = 'horizontal';
             } else {
-                dragDirection = "vertical";
+                dragDirection = 'vertical';
             }
 
             requestAnimationFrame(updateUi); // this is what effectively does the animation (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧
         }
-        if (dragDirection === "vertical") {
+        if (dragDirection === 'vertical') {
             lastX = currentX;
             lastY = currentY;
         } else {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
             lastX = currentX;
             lastY = currentY;
 
-            overlay.classList.add("no-transition");
+            overlay.classList.add('no-transition');
 
             var percentageBeforeDif = (Math.abs(moveX) * 100) / menuWidth;
             var percentage = 100 - percentageBeforeDif;
@@ -149,11 +149,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (currentX === 0 && currentY === 0) {
             if (isOpen) {
-                appMenu.classList.remove("no-transition");
-                menu.classList.remove("no-transition");
+                appMenu.classList.remove('no-transition');
+                menu.classList.remove('no-transition');
             } else {
-                menu.classList.remove("menu--background-visible");
-                menu.classList.remove("no-transition");
+                menu.classList.remove('menu--background-visible');
+                menu.classList.remove('no-transition');
 
             }
         } else {
@@ -177,20 +177,20 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        menu.classList.remove("no-transition");
-        appMenu.classList.remove("no-transition");
+        menu.classList.remove('no-transition');
+        appMenu.classList.remove('no-transition');
 
-        overlay.classList.remove("no-transition");
+        overlay.classList.remove('no-transition');
 
-        menu.classList.add("menu--animatable");
+        menu.classList.add('menu--animatable');
     }
 
     function updateUi() {
         if (isMoving) {
-            var element = document.querySelector(".app-menu-container");
+            var element = document.querySelector('.app-menu-container');
 
-            element.style.transform = "translateX(" + moveX + "px)";
-            element.style.webkitTransform = "translateX(" + moveX + "px)";
+            element.style.transform = 'translateX(' + moveX + 'px)';
+            element.style.webkitTransform = 'translateX(' + moveX + 'px)';
 
             requestAnimationFrame(updateUi);
         }
@@ -199,22 +199,22 @@ document.addEventListener("DOMContentLoaded", function() {
     function closeMenu(translateX) {
 
         function OnTransitionEnd() {
-            overlay.style.opacity = "";
-            overlay.style.display = "";
+            overlay.style.opacity = '';
+            overlay.style.display = '';
 
-            menu.classList.remove("menu--background-visible");
-            menu.classList.remove("menu--animatable");
-            menu.removeEventListener("transitionend", OnTransitionEnd, false);
+            menu.classList.remove('menu--background-visible');
+            menu.classList.remove('menu--animatable');
+            menu.removeEventListener('transitionend', OnTransitionEnd, false);
         }
 
         if (translateX < 0 || !isOpen) {
-            appMenu.style.transform = "";
-            appMenu.style.webkitTransform = "";
+            appMenu.style.transform = '';
+            appMenu.style.webkitTransform = '';
 
-            menu.classList.remove("menu--background-visible");
-            menu.classList.remove("menu--visible");
+            menu.classList.remove('menu--background-visible');
+            menu.classList.remove('menu--visible');
 
-            menu.addEventListener("transitionend", OnTransitionEnd, false);
+            menu.addEventListener('transitionend', OnTransitionEnd, false);
         }
         var c = document.body.classList;
 
@@ -237,43 +237,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function openMenu() {
 
-        appMenu.style.transform = "";
-        appMenu.style.webkitTransform = "";
+        appMenu.style.transform = '';
+        appMenu.style.webkitTransform = '';
 
-        menu.classList.add("menu--visible");
-        menu.classList.add("menu--background-visible");
+        menu.classList.add('menu--visible');
+        menu.classList.add('menu--background-visible');
 
-        overlay.style.opacity = "";
+        overlay.style.opacity = '';
 
     }
 
     function closeMenuOverlay() {
         function OnTransitionEnd() {
-            menu.classList.remove("menu--background-visible");
-            menu.classList.remove("menu--animatable");
-            overlay.style.display = "";
+            menu.classList.remove('menu--background-visible');
+            menu.classList.remove('menu--animatable');
+            overlay.style.display = '';
 
-            menu.removeEventListener("transitionend", OnTransitionEnd);
+            menu.removeEventListener('transitionend', OnTransitionEnd);
         }
 
-        menu.addEventListener("transitionend", OnTransitionEnd, false);
+        menu.addEventListener('transitionend', OnTransitionEnd, false);
 
-        menu.classList.remove("menu--visible");
+        menu.classList.remove('menu--visible');
     }
 
     function clickOpenMenu(ev) {
         ev.preventDefault();
 
-        menu.classList.add("menu--background-visible");
+        menu.classList.add('menu--background-visible');
 
         requestAnimationFrame(function() {
             setTimeout(function() {
-                menu.classList.add("menu--visible");
-                menu.classList.add("menu--animatable");
+                menu.classList.add('menu--visible');
+                menu.classList.add('menu--animatable');
             }, 1);
         });
     }
 
-    init(document.querySelector(".app-menu-container"));
+    init(document.querySelector('.app-menu-container'));
 
 });
