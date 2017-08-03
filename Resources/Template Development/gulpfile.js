@@ -179,7 +179,7 @@ gulp.task('t3copyJs', () => {
         'dist/scripts/**/*'
     ], {
         dot: true
-    }).pipe(gulp.dest('../Public/JavaScripts'));
+    }).pipe(gulp.dest('../Public/JavaScript'));
 });
 gulp.task('typo3', ['t3copyStyles'], () => {
     gulp.start('t3copyJs');
