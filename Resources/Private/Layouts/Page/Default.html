@@ -58,7 +58,10 @@
 
     <div id="news">
         <div id="newsInner">
-                <h1 class="news">News</h1>
+            <h1 class="news">News</h1>
+            <f:cObject typoscriptObjectPath="lib.news"></f:cObject>
+
+            <!--
                 <div class="news-latest-item">
                     <span></span>
                     <h3>
@@ -81,12 +84,11 @@
                         </p>
                     </div>
                 </div>
-            <f:cObject typoscriptObjectPath="lib.news">
-            </f:cObject>
+                -->
         </div>
     </div>
 
-    <f:render section="Main" />
+    <f:render section="Main"/>
 
     <div class="footer">
         <f:cObject typoscriptObjectPath="lib.footer">
