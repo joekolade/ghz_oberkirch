@@ -182,4 +182,22 @@ config {
     compressCss = 0
     concatenateJs = 0
     concatenateCss = 0
+
+    tx_realurl_enable = 1
+
+    baseURL = http://{$ghzok.siteURL}/
 }
+
+# JS Comment in the <head> tag
+
+config.headerComment (
+**********************************************************
+*/*                                                    */*
+*/*      Schäfer - Büro für Webentwicklung             */*
+*/*                                                    */*
+*/*      Biberach                                      */*
+*/*      schaefer-webentwicklung.de                    */*
+*/*      mail@schaefer-webentwicklung.de               */*
+*/*                                                    */*
+**********************************************************
+)

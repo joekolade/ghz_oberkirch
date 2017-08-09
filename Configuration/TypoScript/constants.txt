@@ -49,10 +49,12 @@ page {
 ghzok {
 
     title = Gesundheitszentrum Oberkirch
+    siteURL = ghzok.local
 
     # Seiten
     pids {
         eg = 2
+        eg_links = 6
         og1 = 3
         og2 = 4
         og3 = 5
