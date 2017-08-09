@@ -43,6 +43,22 @@ page {
     }
 }
 
+#####################
+### GHZ Oberkirch ###
+#####################
+ghzok {
+
+    # Seiten
+    pids {
+        eg = 2
+        og1 = 3
+        og2 = 4
+        og3 = 5
+        topnavi = 7
+        footernavi = 8
+    }
+}
+
 
 ##############
 ### CONFIG ###
