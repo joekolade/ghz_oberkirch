@@ -22,6 +22,7 @@ $EM_CONF[$_EXTKEY] = [
             // Sysextensions
             'opendocs' => '',
             'recycler' => '',
+            'news' => ''
         ],
         'conflicts' => [
         ],
