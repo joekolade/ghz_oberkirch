@@ -120,16 +120,28 @@ page {
         }
     }
 
+    headerData.333 = TEXT
+    headerData.333.value (
+<script src="https://use.typekit.net/zgu6joh.js"></script>
+<script>try {
+    Typekit.load({async: true});
+} catch (e) {
+}</script>
+    )
+
     includeCSS {
-        ghz_oberkirch_layout = EXT:ghz_oberkirch/Resources/Public/Css/layout.min.css
+        ghz_oberkirch_layout = EXT:ghz_oberkirch/Resources/Public/Css/main.css
     }
 
     includeJSLibs {
-
+        moderizr = EXT:ghz_oberkirch/Resources/Public/JavaScript/vendor/modernizr.js
     }
 
+    includeJSFooterLibs {
+        ghz_oberkirch_scripts_vendor = EXT:ghz_oberkirch/Resources/Public/JavaScript/vendor.js
+    }
     includeJSFooter {
-        ghz_oberkirch_scripts = EXT:ghz_oberkirch/Resources/Public/JavaScript/scripts.js
+        ghz_oberkirch_scripts = EXT:ghz_oberkirch/Resources/Public/JavaScript/main.js
     }
 }
 

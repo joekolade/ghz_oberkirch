@@ -1,21 +1,187 @@
-<ul>
-    <f:for each="{mainnavigation}" as="mainnavigationItem">
-        <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
-                {mainnavigationItem.title}
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="mobile-menu">
+    <div class="menu-background" style="cursor: pointer;"></div>
+    <div class="app-menu-container">
+        <div class="app-menu">
+            <div class="top">
+                <!--TOP-->
+            </div>
+            <div class="bottom">
+                <!--Menü-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="wrapper">
+
+    <div id="header">
+        <h1>
+            <a href="index.html">
+                <img src="images/GM_Logo.svg" alt="Gesundheitszentrum Oberkirch">
             </a>
-            <f:if condition="{mainnavigationItem.children}">
-                <ul>
-                    <f:for each="{mainnavigationItem.children}" as="child">
-                        <li class="{f:if(condition: child.active, then:'active')}">
-                            <a href="{child.link}" target="{child.target}" title="{child.title}">
-                                {child.title}
-                            </a>
-                        </li>
-                    </f:for>
-                </ul>
-            </f:if>
-        </li>
-    </f:for>
-</ul>
-<f:render section="Main" />
+        </h1>
+        <ul id="quickNavi">
+            <li><a href="#">Anfahrtsplan</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li class="emergency"><a href="#"><span class="alt">Notfall / Emergency</span></a></li>
+        </ul>
+    </div>
+
+    <div class="toggle">
+        <button class="hamburger menu-toggle" type="button"><span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span></button>
+    </div>
+
+    <div id="navigation">
+        <div id="eg" class="floor changeWidth">
+            <h1 class="floor">EG</h1>
+            <ul class="eg">
+                <li class="eg">
+                    <a href="inhalt.html">
+                        <span class="navTitle" data-nohover>Radiologie OKO Offenburg - Kehl - Oberkirch</span>
+                        <span class="navSubtitle">Radiologie OKO Offenburg - Kehl - Oberkirch</span>
+                    </a>
+                </li>
+                <li class="eg">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Orthopädie-Schuhtechnik / -Technik</span>
+                        <span class="navSubtitle">Leuter & Stinus GmbH</span>
+                    </a>
+                </li>
+                <li class="eg">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Apotheke</span>
+                        <span class="navSubtitle">Apotheke am Marktplatz</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="eg_links" class="floor">
+            <h1 class="floor">Café</h1>
+            <ul class="eg_links">
+                <li class="eg_links"></li>
+            </ul>
+        </div>
+
+        <div id="og1" class="floor changeWidth">
+            <h1 class="floor">1.OG</h1>
+            <ul class="og1">
+                <li class="og1">
+                    <a href="inhalt.html"><span class="navTitle">Allgemeinmedizin</span>
+                        <span class="navSubtitle">PD Dr.med. Johannes P. Borde</span>
+                    </a>
+                </li>
+                <li class="og1">
+                    <a href="inhalt.html">
+
+                        <span class="navTitle">Kinder- & Jugendärzte</span>
+                        <span class="navSubtitle">Drea. med. Hanns Michael Burow & Anrea Braun</span>
+                    </a>
+                </li>
+                <li class="og1">
+                    <a href="inhalt.html">
+
+                        <span class="navTitle">Gynäkologie & Geburtshilfe</span>
+                        <span class="navSubtitle">Dr. Jola Rauscher-Linder</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="og2" class="floor changeWidth">
+            <h1 class="floor">2.OG</h1>
+            <ul class="og2">
+                <li class="og2">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Podologie</span>
+                        <span class="navSubtitle">Jutta Schneider</span>
+                    </a>
+                </li>
+                <li class="og2">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Physiotherapie</span>
+                        <span class="navSubtitle">Anne & Raphael Englert</span>
+                    </a>
+                </li>
+                <li class="og2">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Ergotherapie</span>
+                        <span class="navSubtitle">Helena Cleiß</span>
+                    </a>
+                </li>
+                <li class="og2">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Logopädie</span>
+                        <span class="navSubtitle">Monika Kimmig</span>
+                    </a>
+                </li>
+                <li class="og2">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Zahnmedizin</span>
+                        <span class="navSubtitle">Dr. Simone Hauer</span>
+                    </a>
+                </li>
+                <li class="og2">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Innere Medizin</span>
+                        <span class="navSubtitle">PD Dr. Eckhard Jähde</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="og3" class="floor">
+            <h1 class="floor">3.OG</h1>
+            <ul class="og3">
+                <li class="og3">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Neurologie & Psychiatrie</span>
+                        <span class="navSubtitle">Dr. med. Späth</span>
+                    </a>
+                </li>
+                <li class="og3">
+                    <a href="inhalt.html">
+                        <span class="navTitle">HNO-Heilkunde & Allergologie</span>
+                        <span class="navSubtitle">Dr. med. Smitka</span>
+                    </a>
+                </li>
+                <li class="og3">
+                    <a href="inhalt.html">
+                        <span class="navTitle" data-nohover>Pavel Hörcenter</span>
+                        <span class="navSubtitle">Pavel Hörcenter</span>
+                    </a>
+                </li>
+                <li class="og3">
+                    <a href="inhalt.html">
+                        <span class="navTitle" data-nohover>Institut Grüner Baum</span>
+                        <span class="navSubtitle">Institut Grüner Baum</span>
+                    </a>
+                </li>
+                <li class="og3">
+                    <a href="inhalt.html">
+                        <span class="navTitle">Urologie</span>
+                        <span class="navSubtitle">Dr. med. Michael Brake</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <f:render section="Main" />
+
+    <div class="footer">
+        <div class="footerInner">
+            <span><a href="index.html">Home</a></span>
+            <span><a href="#">Kontakt</a></span>
+            <span><a href="#">Impressum</a></span>
+            <span><a href="#">Disclaimer</a></span>
+            <span class="copyright">2010 Gesundheitszentrum Rastatt</span>
+        </div>
+    </div>
+
+</div>

@@ -20,7 +20,8 @@ styles {
 ### PAGE ###
 ############
 page {
-     fluidtemplate {
+
+    fluidtemplate {
         layoutRootPath = EXT:ghz_oberkirch/Resources/Private/Layouts/Page/
         partialRootPath = EXT:ghz_oberkirch/Resources/Private/Partials/Page/
         templateRootPath = EXT:ghz_oberkirch/Resources/Private/Templates/Page/
@@ -51,6 +52,6 @@ config {
     removeDefaultJS = 0
     admPanel = 1
     prefixLocalAnchors = all
-    headerComment = build by sitepackagebuilder.com
+    headerComment =
     sendCacheHeaders = 1
 }
