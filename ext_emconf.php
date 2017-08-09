@@ -6,7 +6,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'GHZ Oberkirch',
     'description' => '',
-    'category' => 'templates',
+    'category' => 'distribution',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-8.7.99',
