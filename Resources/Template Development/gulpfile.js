@@ -72,9 +72,9 @@ gulp.task('html', ['styles', 'scripts'], () => {
 });
 
 gulp.task('images', () => {
-  return gulp.src('app/images/**/*')
+  return gulp.src('app/Images/**/*')
     .pipe($.cache($.imagemin()))
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/Images'));
 });
 
 gulp.task('fonts', () => {
@@ -109,7 +109,7 @@ gulp.task('serve', () => {
 
     gulp.watch([
       'app/*.html',
-      'app/images/**/*',
+      'app/Images/**/*',
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
@@ -183,7 +183,7 @@ gulp.task('t3copyJs', () => {
 });
 gulp.task('t3copyImages', () => {
     return gulp.src([
-        'dist/images/**/*'
+        'dist/Images/**/*'
     ], {
         dot: true
     }).pipe(gulp.dest('../Public/Images'));
