@@ -181,7 +181,14 @@ gulp.task('t3copyJs', () => {
         dot: true
     }).pipe(gulp.dest('../Public/JavaScript'));
 });
-gulp.task('typo3', ['t3copyStyles'], () => {
+gulp.task('t3copyImages', () => {
+    return gulp.src([
+        'dist/images/**/*'
+    ], {
+        dot: true
+    }).pipe(gulp.dest('../Public/Images'));
+});
+gulp.task('typo3', ['t3copyStyles', 't3copyImages'], () => {
     gulp.start('t3copyJs');
 });
 

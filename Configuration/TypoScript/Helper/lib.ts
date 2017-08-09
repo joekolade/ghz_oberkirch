@@ -1,6 +1,13 @@
-lib.logo = TEXT
-lib.logo.value (
-<a href="index.html">
-                <img src="images/GM_Logo.svg" alt="Gesundheitszentrum Oberkirch">
-            </a>
-)
+
+/**
+ * Logo
+ */
+lib.logo = COA
+lib.logo {
+    typolink.parameter = 1
+    10 = IMAGE
+    10 {
+        file = EXT:ghz_oberkirch/Resources/Public/Images/GM_Logo.svg
+        altText = {$ghzok.title}
+    }
+}

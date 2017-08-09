@@ -48,6 +48,8 @@ page {
 #####################
 ghzok {
 
+    title = Gesundheitszentrum Oberkirch
+
     # Seiten
     pids {
         eg = 2
