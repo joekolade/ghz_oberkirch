@@ -11,7 +11,17 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.7.0-8.7.99',
             'fluid_styled_content' => '8.7.0-8.7.99',
-            'rte_ckeditor' => '8.7.0-8.7.99'
+            'rte_ckeditor' => '8.7.0-8.7.99',
+            'realurl' => '',
+            'mask' => '',
+            'dd_googlesitemap' => '',
+            't3monitoring_client' => '',
+            'cs_seo' => '',
+            'sourceopt' => '',
+            'scriptmerger' => '',
+            // Sysextensions
+            'opendocs' => '',
+            'recycler' => '',
         ],
         'conflicts' => [
         ],
