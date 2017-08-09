@@ -74,7 +74,7 @@ div.floor {
   top: 592px;
   right: 0;
   background: #881a22 url(../new/eg.jpg) right top no-repeat;
-  background: #abcb57 url(../images/v2/eg_bg.jpg) right top no-repeat; /* v2 */
+  background: #abcb57 url(../Images/v2/eg_bg.jpg) right top no-repeat; /* v2 */
 }
 
 #eg_links {
@@ -82,9 +82,9 @@ div.floor {
   min-height: 157px;
   top: 562px;
   left: 0;
-  background: #881a22 url(../images/eg_mvz.jpg) right top no-repeat;
-  background: #abcb57 url(../images/v2/eg_bg_links.jpg) right top no-repeat; /* v2 */
-  background: #abcb57 url(../images/v2/left.jpg) right top no-repeat; /* v2.1 */
+  background: #881a22 url(../Images/eg_mvz.jpg) right top no-repeat;
+  background: #abcb57 url(../Images/v2/eg_bg_links.jpg) right top no-repeat; /* v2 */
+  background: #abcb57 url(../Images/v2/left.jpg) right top no-repeat; /* v2.1 */
   font-size: 1em;
 }
 
@@ -100,7 +100,7 @@ div.floor {
   height: 139px;
   top: 438px;
   right: 0;
-  background: url(../images/v2/og1_bg.jpg) right bottom; /* v2 */
+  background: url(../Images/v2/og1_bg.jpg) right bottom; /* v2 */
 }
 
 #og2 {
@@ -108,7 +108,7 @@ div.floor {
   height: 139px;
   top: 284px;
   right: 0;
-  background: url(../images/v2/og2_bg.jpg) right bottom; /* v2 */
+  background: url(../Images/v2/og2_bg.jpg) right bottom; /* v2 */
 }
 
 #og3 {
@@ -116,14 +116,14 @@ div.floor {
   height: 139px;
   top: 130px;
   right: 0;
-  background: url(../images/v2/og3_bg.jpg) right bottom; /* v2 */
+  background: url(../Images/v2/og3_bg.jpg) right bottom; /* v2 */
 }
 
 /* news */
 #news {
   width: 175px;
   height: 462px;
-  //background: url(../images/news.jpg) top center no-repeat;
+  //background: url(../Images/news.jpg) top center no-repeat;
   position: absolute;
 }
 
@@ -171,9 +171,9 @@ div.inhalt #content {
   width: 417px;
   height: 105px;
   height: 108px;
-  background: url(../images/logo.png) left center no-repeat;
+  background: url(../Images/logo.png) left center no-repeat;
   background: url(../new/logo.jpg) left top no-repeat;
-  background: url(../images/v2/logo.png) left top no-repeat; /* v2 */
+  background: url(../Images/v2/logo.png) left top no-repeat; /* v2 */
 }
 
 #header h1 span.alt {
@@ -212,7 +212,7 @@ ul#quickNavi {
   height: 39px;
   margin-top: 3px;
   margin-right: -5px;
-  background: #fff url(../images/emergency.jpg) top right no-repeat;
+  background: #fff url(../Images/emergency.jpg) top right no-repeat;
 }
 
 #quickNavi li.emergency span {
