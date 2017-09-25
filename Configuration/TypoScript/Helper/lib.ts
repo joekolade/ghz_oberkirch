@@ -74,7 +74,12 @@ lib {
     eg_links < .eg
     eg_links {
         special.value = {$ghzok.pids.eg_links}
-        wrap = <h1 class="floor">CAFÉ</h1><ul class="eg_links">|</ul>
+        wrap = |</ul>
+        stdWrap.prepend = TEXT
+        stdWrap.prepend {
+            wrap = <h1 class="floor">|</h1><ul class="eg_links">
+            data.dataWrap = DB:pages:{$ghzok.pids.eg_links}:title
+        }
     }
     og1 < .eg
     og1 {
