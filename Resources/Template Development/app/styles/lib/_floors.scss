@@ -185,13 +185,15 @@ div.floor {
   @include respond-to(medium) {
     h1 {
       //left: 12px;
-      left: 72px;
+      //left: 72px;
+      left: 22px;
       top: auto;
       bottom: -11px;
       text-align: left;
     }
     ul {
-      margin-left: $grid-col;
+      //margin-left: $grid-col;
+      margin-left: $grid-col * 2 / 3;
     }
   }
 }

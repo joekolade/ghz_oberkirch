@@ -4,9 +4,9 @@
  */
 lib.logo = COA
 lib.logo {
-    stdWrap.typolink.parameter = 1
     10 = IMAGE
     10 {
+        stdWrap.typolink.parameter = /
         file = EXT:ghz_oberkirch/Resources/Public/Images/GM_Logo.svg
         altText = {$ghzok.title}
     }

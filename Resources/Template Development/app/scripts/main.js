@@ -1,4 +1,3 @@
-console.log('\'Allo \'Allo!');
 
 $(function(){
    // insert menü into mobile
