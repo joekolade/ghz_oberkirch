@@ -75,6 +75,8 @@ lib {
     eg_links {
         special.value = {$ghzok.pids.eg_links}
         wrap = |</ul>
+        1.NO.doNotLinkIt = 1
+
         stdWrap.prepend = TEXT
         stdWrap.prepend {
             wrap = <h1 class="floor">|</h1><ul class="eg_links">
