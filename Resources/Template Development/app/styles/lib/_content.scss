@@ -122,46 +122,6 @@
 	list-style-type: disc;
 	line-height: 1.4;
   }
-
-  //
-  // Formular
-
-  form,
-  fieldset {
-	border: none;
-  }
-
-  label {
-	display: block;
-	float: left;
-	width: 45px;
-	margin-right: 20px;
-	text-align: right;
-  }
-
-  input[type^=text],
-  textarea {
-	margin: 0;
-	padding: 2px;
-	width: 274px !important;
-	border-style: solid;
-	border-color: #999;
-	border-width: 1px;
-	margin-top: 2px;
-  }
-
-  input:focus,
-  textarea:focus {
-	background-color: gray;
-	color: white;
-  }
-
-  input[type=submit] {
-	margin-left: 65px;
-  }
-
-  @include respond-to(small) {
-  }
 }
 
 // Responsive Images fuer TYPO3 Fluid Styled Content
@@ -180,6 +140,7 @@
   width: 100%;
   height: auto;
 }
+
 .ce-gallery {
   .ce-row {
 	display: flex;
@@ -247,7 +208,7 @@
 	}
 
 	&:last-child {
-		padding-right: 0;
+	  padding-right: 0;
 	}
   }
 }

@@ -1,0 +1,106 @@
+// Form styles
+//
+
+.inner_content {
+
+
+  //
+  // Formular
+
+  form,
+  fieldset {
+	border: none;
+	margin-bottom: 0;
+
+	&.form-group {
+	  margin-bottom: 0;
+	}
+  }
+
+  .form-group {
+	margin-bottom: 5px;
+  }
+
+  label {
+	display: block;
+	float: left;
+	width: 75px;
+	margin-right: 20px;
+	position: relative;
+	margin-top: .35em;
+	clear: both;
+
+	.required {
+	  font-weight: bold;
+	  color: $color-link;
+	}
+  }
+
+  legend {
+	display: none;
+  }
+
+  input[type^=text],
+  select,
+  textarea {
+	margin: 0;
+	padding: .5em 1em;
+	min-width: 274px;
+	border-style: solid;
+	border-color: #999;
+	border-width: 1px;
+	margin-top: 2px;
+  }
+  select {
+	background: white;
+	height: 2.5em;
+	border-radius: 0;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+	background-color: $grau;
+	color: white;
+	border-color: $cyan;
+	box-shadow: none;
+	outline: none;
+  }
+
+  button[type=submit],
+  input[type=submit] {
+	padding: .5em 2em;
+	background: $color-link;
+	color: white;
+	border: thin solid $grau;
+  }
+
+  button[type=submit],
+  input[type=submit],
+  .frame-type-form_formframework p {
+	margin-left: 15px;
+  }
+
+  @include respond-to(small) {
+
+	button[type=submit],
+	input[type=submit] {
+	  margin-left: 95px + 15px;
+	}
+
+	.frame-type-form_formframework p {
+	  margin-left: 95px + 15px;
+	  margin-bottom: 0.5em;
+	}
+  }
+  @include respond-to(medium) {
+	label {
+	  text-align: right;
+	  .required {
+		position: absolute;
+		left: 103%;
+
+	  }
+	}
+  }
+}

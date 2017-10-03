@@ -1,0 +1,398 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form - template development</title>
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+
+	<script src="https://use.typekit.net/zgu6joh.js"></script>
+	<script>try {
+		Typekit.load({async: true});
+	} catch (e) {
+	}</script>
+
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+</head>
+<body class="content">
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+	your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="mobile-menu">
+	<div class="menu-background" style="cursor: pointer;"></div>
+	<div class="app-menu-container">
+		<div class="app-menu">
+			<div class="top">
+				<!--TOP-->
+			</div>
+			<div class="bottom">
+				<!--Menü-->
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="wrapper">
+
+	<div id="header">
+		<h1>
+			<a href="index.html">
+				<img src="images/GM_Logo.svg" alt="Gesundheitszentrum Oberkirch">
+			</a>
+		</h1>
+		<ul id="quickNavi">
+			<li><a href="#">Anfahrtsplan</a></li>
+			<li><a href="#">Kontakt</a></li>
+			<li class="emergency"><a href="#"><span class="alt">Notfall / Emergency</span></a></li>
+		</ul>
+	</div>
+
+	<div class="toggle">
+		<button class="hamburger menu-toggle" type="button"><span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span></button>
+	</div>
+
+	<div id="navigation">
+		<div id="eg" class="floor changeWidth">
+			<h1 class="floor">EG</h1>
+			<ul class="eg">
+				<li class="eg">
+					<a href="inhalt.html">
+						<span class="navTitle" data-nohover>Radiologie OKO Offenburg - Kehl - Oberkirch</span>
+						<span class="navSubtitle">Radiologie OKO Offenburg - Kehl - Oberkirch</span>
+					</a>
+				</li>
+				<li class="eg">
+					<a href="inhalt.html">
+						<span class="navTitle">Orthopädie-Schuhtechnik / -Technik</span>
+						<span class="navSubtitle">Leuter & Stinus GmbH</span>
+					</a>
+				</li>
+				<li class="eg">
+					<a href="inhalt.html">
+						<span class="navTitle">Apotheke</span>
+						<span class="navSubtitle">Apotheke am Marktplatz</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="eg_links" class="floor">
+			<h1 class="floor">Café</h1>
+			<ul class="eg_links">
+				<li class="eg_links"></li>
+			</ul>
+		</div>
+
+		<div id="og1" class="floor changeWidth">
+			<h1 class="floor">1.OG</h1>
+			<ul class="og1">
+				<li class="og1">
+					<a href="inhalt.html"><span class="navTitle">Allgemeinmedizin</span>
+						<span class="navSubtitle">PD Dr.med. Johannes P. Borde</span>
+					</a>
+				</li>
+				<li class="og1">
+					<a href="inhalt.html">
+
+						<span class="navTitle">Kinder- & Jugendärzte</span>
+						<span class="navSubtitle">Drea. med. Hanns Michael Burow & Anrea Braun</span>
+					</a>
+				</li>
+				<li class="og1">
+					<a href="inhalt.html">
+
+						<span class="navTitle">Gynäkologie & Geburtshilfe</span>
+						<span class="navSubtitle">Dr. Jola Rauscher-Linder</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="og2" class="floor changeWidth">
+			<h1 class="floor">2.OG</h1>
+			<ul class="og2">
+				<li class="og2">
+					<a href="inhalt.html">
+						<span class="navTitle">Podologie</span>
+						<span class="navSubtitle">Jutta Schneider</span>
+					</a>
+				</li>
+				<li class="og2">
+					<a href="inhalt.html">
+						<span class="navTitle">Physiotherapie</span>
+						<span class="navSubtitle">Anne & Raphael Englert</span>
+					</a>
+				</li>
+				<li class="og2">
+					<a href="inhalt.html">
+						<span class="navTitle">Ergotherapie</span>
+						<span class="navSubtitle">Helena Cleiß</span>
+					</a>
+				</li>
+				<li class="og2">
+					<a href="inhalt.html">
+						<span class="navTitle">Logopädie</span>
+						<span class="navSubtitle">Monika Kimmig</span>
+					</a>
+				</li>
+				<li class="og2">
+					<a href="inhalt.html">
+						<span class="navTitle">Zahnmedizin</span>
+						<span class="navSubtitle">Dr. Simone Hauer</span>
+					</a>
+				</li>
+				<li class="og2">
+					<a href="inhalt.html">
+						<span class="navTitle">Innere Medizin</span>
+						<span class="navSubtitle">PD Dr. Eckhard Jähde</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="og3" class="floor">
+			<h1 class="floor">3.OG</h1>
+			<ul class="og3">
+				<li class="og3">
+					<a href="inhalt.html">
+						<span class="navTitle">Neurologie & Psychiatrie</span>
+						<span class="navSubtitle">Dr. med. Späth</span>
+					</a>
+				</li>
+				<li class="og3">
+					<a href="inhalt.html">
+						<span class="navTitle">HNO-Heilkunde & Allergologie</span>
+						<span class="navSubtitle">Dr. med. Smitka</span>
+					</a>
+				</li>
+				<li class="og3">
+					<a href="inhalt.html">
+						<span class="navTitle" data-nohover>Pavel Hörcenter</span>
+						<span class="navSubtitle">Pavel Hörcenter</span>
+					</a>
+				</li>
+				<li class="og3">
+					<a href="inhalt.html">
+						<span class="navTitle" data-nohover>Institut Grüner Baum</span>
+						<span class="navSubtitle">Institut Grüner Baum</span>
+					</a>
+				</li>
+				<li class="og3">
+					<a href="inhalt.html">
+						<span class="navTitle">Urologie</span>
+						<span class="navSubtitle">Dr. med. Michael Brake</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="news">
+		<div id="newsInner">
+			<h1 class="news">News</h1>
+			<div class="news-latest-item">
+				<span></span>
+				<h3>
+					Die richtige Ernährung im Alltag<br/>
+					Vortrag von Dr. Stubner
+				</h3>
+				<div class="content">
+					<span class="important">Termin:</span>
+					<br/>
+					<b>20.10.2010</b>
+					<p>
+						19:30 Uhr im EG Gesundheitszentrum Rastatt
+					</p>
+					<hr/>
+					<span class="important">Termin:</span>
+					<br/>
+					<b>20.10.2010</b>
+					<p>
+						19:30 Uhr im EG Gesundheitszentrum Rastatt
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="inner_content">
+
+			<div id="c42" class="frame frame-default frame-type-form_formframework frame-layout-0">
+				<form enctype="multipart/form-data" method="post" id="kontaktformular"
+					  action="/kontakt/?tx_form_formframework%5Baction%5D=perform&amp;tx_form_formframework%5Bcontroller%5D=FormFrontend&amp;cHash=ff28421a17954ef3eb26a5ee4548d25a#kontaktformular">
+					<div><input type="hidden" name="tx_form_formframework[kontaktformular][__state]"
+								value="TzozOToiVFlQTzNcQ01TXEZvcm1cRG9tYWluXFJ1bnRpbWVcRm9ybVN0YXRlIjoyOntzOjI1OiIAKgBsYXN0RGlzcGxheWVkUGFnZUluZGV4IjtpOjA7czoxMzoiACoAZm9ybVZhbHVlcyI7YTowOnt9fQ==4502537a330d1e9780e6c3b57e1d85c29303ab00"><input
+							type="hidden" name="tx_form_formframework[__trustedProperties]"
+							value="a:1:{s:15:&quot;kontaktformular&quot;;a:14:{s:14:&quot;singleselect-1&quot;;i:1;s:6:&quot;text-1&quot;;i:1;s:6:&quot;text-2&quot;;i:1;s:4:&quot;name&quot;;i:1;s:6:&quot;text-3&quot;;i:1;s:6:&quot;text-4&quot;;i:1;s:6:&quot;text-5&quot;;i:1;s:6:&quot;text-6&quot;;i:1;s:6:&quot;text-7&quot;;i:1;s:5:&quot;email&quot;;i:1;s:6:&quot;text-8&quot;;i:1;s:7:&quot;message&quot;;i:1;s:6:&quot;KSgFTm&quot;;i:1;s:13:&quot;__currentPage&quot;;i:1;}}529580d9520458f02085c6d80c4cebf94b7cf2cd">
+					</div>
+					<h2>Kontaktformular</h2>
+					<fieldset id="kontaktformular-fieldset-1" class="form-group">
+						<legend>Zur Person</legend>
+						<div class="form-group"><label class="control-label"
+													   for="kontaktformular-singleselect-1">Anrede</label>
+							<div class="input"><select class=" form-control" id="kontaktformular-singleselect-1"
+													   name="tx_form_formframework[kontaktformular][singleselect-1]">
+								<option value="">Bitte wählen</option>
+								<option value="Herr">Herr</option>
+								<option value="Frau">Frau</option>
+							</select></div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-text-1">Titel</label>
+							<div class="input"><input class=" form-control" id="kontaktformular-text-1" type="text"
+													  name="tx_form_formframework[kontaktformular][text-1]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label"
+													   for="kontaktformular-text-2">Vorname</label>
+							<div class="input"><input placeholder="Vorname" class=" form-control"
+													  id="kontaktformular-text-2" type="text"
+													  name="tx_form_formframework[kontaktformular][text-2]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-name">Nachname
+							<span class="required">*</span></label>
+							<div class="input"><input placeholder="Nachname" required="required" class=" form-control"
+													  id="kontaktformular-name" type="text"
+													  name="tx_form_formframework[kontaktformular][name]" value="">
+							</div>
+						</div>
+					</fieldset>
+					<fieldset id="kontaktformular-fieldset-2" class="form-group">
+						<legend>Adresse</legend>
+						<div class="form-group"><label class="control-label" for="kontaktformular-text-3">Straße
+							<span class="required">*</span></label>
+							<div class="input"><input placeholder="Straße" required="required" class=" form-control"
+													  id="kontaktformular-text-3" type="text"
+													  name="tx_form_formframework[kontaktformular][text-3]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-text-4">PLZ</label>
+							<div class="input"><input placeholder="PLZ" class=" form-control"
+													  id="kontaktformular-text-4" type="text"
+													  name="tx_form_formframework[kontaktformular][text-4]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-text-5">Ort
+							<span class="required">*</span></label>
+							<div class="input"><input placeholder="Ort" required="required" class=" form-control"
+													  id="kontaktformular-text-5" type="text"
+													  name="tx_form_formframework[kontaktformular][text-5]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-text-6">Firma</label>
+							<div class="input"><input placeholder="Firma" class=" form-control"
+													  id="kontaktformular-text-6" type="text"
+													  name="tx_form_formframework[kontaktformular][text-6]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-text-7">Land</label>
+							<div class="input"><input placeholder="Land" class=" form-control"
+													  id="kontaktformular-text-7" type="text"
+													  name="tx_form_formframework[kontaktformular][text-7]" value="">
+							</div>
+						</div>
+					</fieldset>
+					<fieldset id="kontaktformular-fieldset-3" class="form-group">
+						<legend>Kontakt</legend>
+						<div class="form-group"><label class="control-label" for="kontaktformular-email">E-Mail
+							<span class="required">*</span></label>
+							<div class="input"><input placeholder="E-Mail" required="required" class=" form-control"
+													  id="kontaktformular-email" type="text"
+													  name="tx_form_formframework[kontaktformular][email]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-text-8">Telefon
+							<span class="required">*</span></label>
+							<div class="input"><input required="required" placeholder="Telefon" class=" form-control"
+													  id="kontaktformular-text-8" type="text"
+													  name="tx_form_formframework[kontaktformular][text-8]" value="">
+							</div>
+						</div>
+						<div class="form-group"><label class="control-label" for="kontaktformular-message">Nachricht
+							<span class="required">*</span></label>
+							<div class="input"><textarea required="required" placeholder="Nachricht"
+														 class="xxlarge form-control" id="kontaktformular-message"
+														 name="tx_form_formframework[kontaktformular][message]"></textarea>
+							</div>
+						</div>
+					</fieldset>
+					<input autocomplete="off" id="kontaktformular-KSgFTm"
+						   style="position:absolute; margin:0 0 0 -999em;" tabindex="-1" type="text"
+						   name="tx_form_formframework[kontaktformular][KSgFTm]">
+					<div class="clearfix"><p>Felder mit * sind Pflichtfelder</p></div>
+					<div class="actions">
+						<nav class="form-navigation">
+							<div class="btn-toolbar" role="toolbar">
+								<div class="btn-group" role="group"><span class="next submit"><button
+										class="btn btn-primary" type="submit"
+										name="tx_form_formframework[kontaktformular][__currentPage]" value="1">
+							Submit
+						</button></span></div>
+							</div>
+						</nav>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="footerInner">
+			<span><a href="index.html">Home</a></span>
+			<span><a href="#">Kontakt</a></span>
+			<span><a href="#">Impressum</a></span>
+			<span><a href="#">Disclaimer</a></span>
+			<span class="copyright">2010 Gesundheitszentrum Rastatt</span>
+		</div>
+	</div>
+
+</div>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	(function (b, o, i, l, e, r) {
+		b.GoogleAnalyticsObject = l;
+		b[l] || (b[l] =
+			function () {
+				(b[l].q = b[l].q || []).push(arguments)
+			});
+		b[l].l = +new Date;
+		e = o.createElement(i);
+		r = o.getElementsByTagName(i)[0];
+		e.src = 'https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e, r)
+	}(window, document, 'script', 'ga'));
+	ga('create', 'UA-XXXXX-X');
+	ga('send', 'pageview');
+</script>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/_js_gesture_menu.js"></script>
+<!-- endbuild -->
+</body>
+</html>
