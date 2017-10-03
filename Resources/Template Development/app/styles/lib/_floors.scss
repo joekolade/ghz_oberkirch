@@ -2,8 +2,25 @@
 // Floors
 //
 
+
+// Helper & vars
+//
+
+$overlay: url("../Images/overlay.png");
+
+@mixin floor {
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+
+  ul {
+    background: transparent !important;
+  }
+}
+
+
 //
 // Floors general
+
 
 div.floor {
   min-height: $floor-height;
@@ -94,6 +111,11 @@ div.floor {
   }
 
   @include respond-to(medium) {
+
+    background: $overlay, map-get($ghz-colors, eg);
+    @include floor;
+    background-position-y: 3*(- $floor-height - $grid-gap);
+
     h1 {
       right: 35px;
       bottom: -11px;
@@ -122,6 +144,7 @@ div.floor {
 
 #eg_links {
   background: map-get($ghz-colors, eg);
+
   margin-top: .5em;
   h1 {
     color: map-get($ghz-colors, eg);
@@ -138,6 +161,12 @@ div.floor {
   }
 
   @include respond-to(medium) {
+
+    background: $overlay, map-get($ghz-colors, eg);
+    @include floor;
+    background-position-y: 3*(- $floor-height - $grid-gap);
+    background-position-x: - $grid-col - 2*$grid-gap;
+
     display: block;
 
     h1 {
@@ -151,7 +180,8 @@ div.floor {
 }
 
 #og1 {
-  background: map-get($ghz-colors, og1);
+  background:  map-get($ghz-colors, og1);
+  @include floor;
 
   h1 {
     color: map-get($ghz-colors, og1);
@@ -162,6 +192,11 @@ div.floor {
   }
 
   @include respond-to(medium) {
+
+    background: $overlay, map-get($ghz-colors, og1);
+    @include floor;
+    background-position-y: 2*(- $floor-height - $grid-gap);
+
     h1 {
       right: $grid-gap * 2;
       top: auto;
@@ -183,6 +218,10 @@ div.floor {
   }
 
   @include respond-to(medium) {
+    background: $overlay, map-get($ghz-colors, og2);
+    @include floor;
+    background-position-y: - $floor-height - $grid-gap;
+
     h1 {
       //left: 12px;
       //left: 72px;
@@ -201,15 +240,20 @@ div.floor {
 #og3 {
   background: map-get($ghz-colors, og3);
 
+
   h1 {
     color: map-get($ghz-colors, og3);
   }
 
   ul {
-    background: map-get($ghz-colors, og3);
+    //background: map-get($ghz-colors, og3);
   }
 
   @include respond-to(medium) {
+
+    background: $overlay, map-get($ghz-colors, og3);
+    @include floor;
+
     h1 {
       right: auto;
       left: $grid-double-col + $grid-gap + 95px; // 485px;
