@@ -12,8 +12,11 @@ $overlay: url("../Images/overlay.png");
   background-repeat: no-repeat;
   background-position: 100% 0%;
 
-  ul {
-    background: transparent !important;
+
+  @include respond-to(medium) {
+    ul {
+      background: transparent !important;
+    }
   }
 }
 
@@ -246,7 +249,7 @@ div.floor {
   }
 
   ul {
-    //background: map-get($ghz-colors, og3);
+    background: map-get($ghz-colors, og3);
   }
 
   @include respond-to(medium) {
