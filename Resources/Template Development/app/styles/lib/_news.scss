@@ -14,7 +14,7 @@
 
   }
 
-  .news-latest-item {
+  .news {
     background: map_get($ghz-colors, base-lighter);
     padding: .5em;
     padding-top: 1em;
@@ -45,7 +45,7 @@
       color: map_get($ghz-colors, base-lighter);
     }
 
-    .news-latest-item {
+    .news {
       position: absolute;
       top: $floor-height + $grid-gap;
       width: 100%;

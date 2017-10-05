@@ -126,6 +126,7 @@ page {
 #### CONFIG ####
 ################
 config {
+	language = {$config.language}
 	absRefPrefix = auto
 	no_cache = {$config.no_cache}
 	uniqueLinkVars = 1
@@ -176,3 +177,6 @@ config.headerComment (
 */*                                                    */*
 **********************************************************
 )
+
+
+plugin.tx_news.settings.displayDummyIfNoMedia = 0
