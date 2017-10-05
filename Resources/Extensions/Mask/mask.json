@@ -1,0 +1,22 @@
+{
+    "tt_content": {
+        "elements": {
+            "startslider": {
+                "label": "Startseite Bilderkarussel",
+                "key": "startslider",
+                "shortLabel": "",
+                "description": "",
+                "icon": "fa-image",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "media"
+                ],
+                "labels": [
+                    "",
+                    ""
+                ]
+            }
+        }
+    }
+}
