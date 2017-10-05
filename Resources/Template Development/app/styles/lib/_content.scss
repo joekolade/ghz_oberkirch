@@ -9,6 +9,12 @@
 .inner_content {
   padding: $default-gap;
 
+  background-color: #e7e7e4;
+
+  body.start & {
+	padding: 0;
+  }
+
   font-size: 1.1em;
   line-height: 1.3;
 

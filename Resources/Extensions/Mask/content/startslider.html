@@ -1,11 +1,10 @@
-<f:if condition="{data.header}">
-{data.header}<br />
-</f:if>
-
-<f:if condition="{data.media}">
-<f:for each="{data.media}" as="file">
-  <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
-  {file.description} / {file.identifier}<br />
-</f:for>
-</f:if>
+<div class="full-slider">
+	<f:if condition="{data.media}">
+		<f:for each="{data.media}" as="file">
+			<div class="slide">
+				<f:image image="{file}" alt="{file.alternative}" class="img-fluid" title="{file.title}" width="473"/>
+			</div>
+		</f:for>
+	</f:if>
+</div>
 
