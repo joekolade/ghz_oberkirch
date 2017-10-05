@@ -115,12 +115,29 @@ lib.news {
 				1 = list
 			}
 		}
+		view {
+			templateRootPaths >
+			templateRootPaths {
+				0 = EXT:news/Resources/Private/Templates/
+				1 = EXT:ghz_oberkirch/Resources/Extensions/News/Templates/
+			}
+			partialRootPaths >
+			partialRootPaths {
+				0 = EXT:news/Resources/Private/Partials/
+				1 = EXT:ghz_oberkirch/Resources/Extensions/News/Partials/
+			}
+			layoutRootPaths >
+			layoutRootPaths {
+				0 = EXT:news/Resources/Private/Layouts/
+				1 = EXT:ghz_oberkirch/Resources/Extensions/News/Layouts/
+			}
+		}
 
 		settings < plugin.tx_news.settings
 		settings {
 			//categories = 49
 			limit = 3
-			detailPid = 4
+			detailPid = 5
 			overrideFlexformSettingsIfEmpty := addToList(detailPid)
 			startingpoint = 3
 

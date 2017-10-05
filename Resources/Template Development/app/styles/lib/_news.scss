@@ -1,5 +1,14 @@
 #news {
   margin-bottom: $default-gap;
+
+  a {
+    color: $color-link;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   h1 {
     @include dax;
 
@@ -18,6 +27,11 @@
     background: map_get($ghz-colors, base-lighter);
     padding: .5em;
     padding-top: 1em;
+
+  }
+
+  .footer {
+    border-color: #ccc;
   }
 
   @include respond-to(small) {
