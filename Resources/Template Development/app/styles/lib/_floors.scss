@@ -21,8 +21,8 @@ $overlay: url("../Images/overlay.png");
 }
 
 
-//
 // Floors general
+//
 
 
 div.floor {
@@ -83,14 +83,18 @@ div.floor {
 }
 
 
-//
 // Floors special
+//
 
 #eg_links {
   .app-menu-container & {
     display: none;
   }
 }
+
+// Colors
+//
+
 .app-menu-container {
 
   #eg,
@@ -101,6 +105,7 @@ div.floor {
     background: white;
   }
 }
+
 
 #eg {
   background: map-get($ghz-colors, eg);
@@ -118,6 +123,95 @@ div.floor {
     background: $overlay, map-get($ghz-colors, eg);
     @include floor;
     background-position-y: 3*(- $floor-height - $grid-gap);
+
+  }
+}
+
+#eg_links {
+  background: map-get($ghz-colors, eg);
+
+  h1 {
+    color: map-get($ghz-colors, eg);
+    display: none;
+  }
+
+  ul {
+    background: map-get($ghz-colors, eg);
+  }
+
+  @include respond-to(medium) {
+
+    background: $overlay, map-get($ghz-colors, eg);
+    @include floor;
+    background-position-y: 3*(- $floor-height - $grid-gap);
+    background-position-x: - $grid-col - 2*$grid-gap;
+  }
+}
+
+#og1 {
+  background:  map-get($ghz-colors, og1);
+  @include floor;
+
+  h1 {
+    color: map-get($ghz-colors, og1);
+  }
+
+  ul {
+    background: map-get($ghz-colors, og1);
+  }
+
+  @include respond-to(medium) {
+
+    background: $overlay, map-get($ghz-colors, og1);
+    @include floor;
+    background-position-y: 2*(- $floor-height - $grid-gap);
+
+  }
+}
+
+#og2 {
+  background: map-get($ghz-colors, og2);
+
+  h1 {
+    color: map-get($ghz-colors, og2);
+  }
+
+  ul {
+    background: map-get($ghz-colors, og2);
+  }
+
+  @include respond-to(medium) {
+    background: $overlay, map-get($ghz-colors, og2);
+    @include floor;
+    background-position-y: - $floor-height - $grid-gap;
+
+  }
+}
+
+#og3 {
+  background: map-get($ghz-colors, og3);
+
+
+  h1 {
+    color: map-get($ghz-colors, og3);
+  }
+
+  ul {
+    background: map-get($ghz-colors, og3);
+  }
+
+  @include respond-to(medium) {
+
+    background: $overlay, map-get($ghz-colors, og3);
+    @include floor;
+  }
+}
+
+// Positions
+//
+
+div.floor {
+  @include respond-to(medium) {
 
     h1 {
       right: 35px;
@@ -145,18 +239,48 @@ div.floor {
   }
 }
 
+#og2, #og1 {
+  @include respond-to(medium) {
+    ul {
+      margin-left: $grid-gap;
+    }
+  }
+}
+
+
+//#eg {
+//
+//  @include respond-to(medium) {
+//
+//    h1 {
+//      right: 35px;
+//      bottom: -11px;
+//      top: auto;
+//    }
+//    ul {
+//      margin-left: $grid-double-col + $grid-gap * 2;
+//    }
+//  }
+//
+//  //
+//  // Contentpage
+//  .content & {
+//    @include respond-to(medium) {
+//      h1 {
+//        right: 35px;
+//        bottom: -11px;
+//        top: auto;
+//      }
+//      ul {
+//        margin-left: $grid-gap * 1;
+//      }
+//    }
+//  }
+//}
+//
 #eg_links {
-  background: map-get($ghz-colors, eg);
 
   margin-top: .5em;
-  h1 {
-    color: map-get($ghz-colors, eg);
-    display: none;
-  }
-
-  ul {
-    background: map-get($ghz-colors, eg);
-  }
 
   @include respond-to(small) {
     margin-top: 0;
@@ -164,11 +288,6 @@ div.floor {
   }
 
   @include respond-to(medium) {
-
-    background: $overlay, map-get($ghz-colors, eg);
-    @include floor;
-    background-position-y: 3*(- $floor-height - $grid-gap);
-    background-position-x: - $grid-col - 2*$grid-gap;
 
     display: block;
 
@@ -181,108 +300,69 @@ div.floor {
     }
   }
 }
-
-#og1 {
-  background:  map-get($ghz-colors, og1);
-  @include floor;
-
-  h1 {
-    color: map-get($ghz-colors, og1);
-  }
-
-  ul {
-    background: map-get($ghz-colors, og1);
-  }
-
-  @include respond-to(medium) {
-
-    background: $overlay, map-get($ghz-colors, og1);
-    @include floor;
-    background-position-y: 2*(- $floor-height - $grid-gap);
-
-    h1 {
-      right: $grid-gap * 2;
-      top: auto;
-      bottom: -11px;
-      text-align: left;
-    }
-  }
-}
-
-#og2 {
-  background: map-get($ghz-colors, og2);
-
-  h1 {
-    color: map-get($ghz-colors, og2);
-  }
-
-  ul {
-    background: map-get($ghz-colors, og2);
-  }
-
-  @include respond-to(medium) {
-    background: $overlay, map-get($ghz-colors, og2);
-    @include floor;
-    background-position-y: - $floor-height - $grid-gap;
-
-    h1 {
-      //left: 12px;
-      //left: 72px;
-      left: 22px;
-      top: auto;
-      bottom: -11px;
-      text-align: left;
-    }
-    ul {
-      //margin-left: $grid-col;
-      margin-left: $grid-col * 2 / 3;
-    }
-  }
-}
-
-#og3 {
-  background: map-get($ghz-colors, og3);
-
-
-  h1 {
-    color: map-get($ghz-colors, og3);
-  }
-
-  ul {
-    background: map-get($ghz-colors, og3);
-  }
-
-  @include respond-to(medium) {
-
-    background: $overlay, map-get($ghz-colors, og3);
-    @include floor;
-
-    h1 {
-      right: auto;
-      left: $grid-double-col + $grid-gap + 95px; // 485px;
-      top: auto;
-      bottom: -11px;
-    }
-    ul {
-      margin-left: $grid-double-col + $grid-gap + 85px; // 475px
-    }
-  }
-
-  //
-  // Contentpage
-  .content & {
-    @include respond-to(medium) {
-
-      h1 {
-        right: auto;
-        left: 95px;
-        top: auto;
-        bottom: -11px;
-      }
-
-      ul {
-        margin-left: 85px;
-      }
-    }
-  }
-}
+//
+//#og1 {
+//
+//  @include respond-to(medium) {
+//
+//    h1 {
+//      right: $grid-gap * 2;
+//      top: auto;
+//      bottom: -11px;
+//      text-align: left;
+//    }
+//  }
+//}
+//
+//#og2 {
+//
+//  @include respond-to(medium) {
+//
+//    h1 {
+//      //left: 12px;
+//      //left: 72px;
+//      left: 22px;
+//      top: auto;
+//      bottom: -11px;
+//      text-align: left;
+//    }
+//    ul {
+//      //margin-left: $grid-col;
+//      margin-left: $grid-col * 2 / 3;
+//    }
+//  }
+//}
+//
+//#og3 {
+//
+//  @include respond-to(medium) {
+//
+//    h1 {
+//      right: auto;
+//      left: $grid-double-col + $grid-gap + 95px; // 485px;
+//      top: auto;
+//      bottom: -11px;
+//    }
+//    ul {
+//      margin-left: $grid-double-col + $grid-gap + 85px; // 475px
+//    }
+//  }
+//
+//  //
+//  // Contentpage
+//  .content & {
+//    @include respond-to(medium) {
+//
+//      h1 {
+//        right: auto;
+//        left: 95px;
+//        top: auto;
+//        bottom: -11px;
+//      }
+//
+//      ul {
+//        margin-left: 85px;
+//      }
+//    }
+//  }
+//}
