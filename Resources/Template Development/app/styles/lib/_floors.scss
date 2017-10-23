@@ -281,6 +281,9 @@ div.floor {
 #eg_links {
 
   margin-top: .5em;
+  ul {
+    margin-left: 0;
+  }
 
   @include respond-to(small) {
     margin-top: 0;

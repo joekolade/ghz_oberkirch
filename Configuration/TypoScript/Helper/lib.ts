@@ -73,7 +73,7 @@ lib {
 	eg_links {
 		special.value = {$ghzok.pids.eg_links}
 		wrap = |</ul>
-		1.NO.doNotLinkIt = 1
+		#1.NO.doNotLinkIt = 1
 
 		stdWrap.prepend = TEXT
 		stdWrap.prepend {
