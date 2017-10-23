@@ -50,7 +50,7 @@ $(function(){
             if($slider.length){
 
             	// Shuffle images
-				$slider.find('.slide').shuffle();
+				// $slider.find('.slide').shuffle();
 				$slider.find('.slide').each(function () {
 					if($(this).index() >= maxItems){
 						$(this).remove();
