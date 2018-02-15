@@ -74,15 +74,6 @@ page {
 		}
 	}
 
-	headerData.333 = TEXT
-	headerData.333.value (
-<script src="https://use.typekit.net/zgu6joh.js"></script>
-<script>try {
-    Typekit.load({async: true});
-} catch (e) {
-}</script>
-	)
-
 	headerData.334 = TEXT
 	headerData.334.value (
 <link rel="apple-touch-icon" sizes="60x60" href="typo3conf/ext/ghz_oberkirch/Resources/Public/Favicons/apple-icon-60x60.png">
@@ -107,6 +98,10 @@ page {
 	includeCSS {
 		ghz_oberkirch_vendor = EXT:ghz_oberkirch/Resources/Public/Css/vendor.css
 		ghz_oberkirch_layout = EXT:ghz_oberkirch/Resources/Public/Css/main.css
+
+		# Load Typekit
+		kit = https://use.typekit.net/xmr1oar.css
+		kit.external = 1
 	}
 
 	includeJSLibs {
