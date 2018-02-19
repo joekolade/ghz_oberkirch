@@ -96,12 +96,13 @@ page {
 	)
 
 	includeCSS {
-		ghz_oberkirch_vendor = EXT:ghz_oberkirch/Resources/Public/Css/vendor.css
-		ghz_oberkirch_layout = EXT:ghz_oberkirch/Resources/Public/Css/main.css
-
 		# Load Typekit
 		kit = https://use.typekit.net/xmr1oar.css
 		kit.external = 1
+
+		ghz_oberkirch_vendor = EXT:ghz_oberkirch/Resources/Public/Css/vendor.css
+		ghz_oberkirch_layout = EXT:ghz_oberkirch/Resources/Public/Css/main.css
+
 	}
 
 	includeJSLibs {
