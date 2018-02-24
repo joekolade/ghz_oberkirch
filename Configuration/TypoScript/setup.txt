@@ -157,7 +157,7 @@ config {
 
 	tx_realurl_enable = 1
 
-	baseURL = http://{$ghzok.siteURL}/
+	baseURL = https://{$ghzok.siteURL}/
 }
 
 # JS Comment in the <head> tag
