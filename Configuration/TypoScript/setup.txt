@@ -19,20 +19,12 @@ page {
 	typeNum = 0
 	#shortcutIcon = EXT:ghz_oberkirch/Resources/Public/Icons/favicon.ico
 
-	bodyTagCObject = CASE
+	bodyTagCObject = TEXT
 	bodyTagCObject {
-		key.field = pid
-		default = TEXT
-		default.value = <body id="id_{field:alias//field:uid}" class="content">
-		default.insertData = 1
+		noTrimWrap = |<body id="id_{field:alias//field:uid}" class="|">|
+		value = content
+		insertData = 1
 
-		# Home
-		start = TEXT
-		start.noTrimWrap = |<body id="id_{field:alias//field:uid}" class="|">|
-		start.value = start
-		start.insertData = 1
-
-		0 < .start
 	}
 
 	10 = FLUIDTEMPLATE
@@ -117,6 +109,11 @@ page {
 		ghz_oberkirch_scripts = EXT:ghz_oberkirch/Resources/Public/JavaScript/main.js
 	}
 }
+
+// Homepage
+[page["uid"] == 2]
+	page.bodyTagCObject.value = start
+[END]
 
 ################
 #### CONFIG ####
