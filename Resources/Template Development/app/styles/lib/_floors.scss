@@ -247,37 +247,6 @@ div.floor {
   }
 }
 
-
-//#eg {
-//
-//  @include respond-to(medium) {
-//
-//    h1 {
-//      right: 35px;
-//      bottom: -11px;
-//      top: auto;
-//    }
-//    ul {
-//      margin-left: $grid-double-col + $grid-gap * 2;
-//    }
-//  }
-//
-//  //
-//  // Contentpage
-//  .content & {
-//    @include respond-to(medium) {
-//      h1 {
-//        right: 35px;
-//        bottom: -11px;
-//        top: auto;
-//      }
-//      ul {
-//        margin-left: $grid-gap * 1;
-//      }
-//    }
-//  }
-//}
-//
 #eg_links {
 
   margin-top: .5em;
@@ -303,69 +272,3 @@ div.floor {
     }
   }
 }
-//
-//#og1 {
-//
-//  @include respond-to(medium) {
-//
-//    h1 {
-//      right: $grid-gap * 2;
-//      top: auto;
-//      bottom: -11px;
-//      text-align: left;
-//    }
-//  }
-//}
-//
-//#og2 {
-//
-//  @include respond-to(medium) {
-//
-//    h1 {
-//      //left: 12px;
-//      //left: 72px;
-//      left: 22px;
-//      top: auto;
-//      bottom: -11px;
-//      text-align: left;
-//    }
-//    ul {
-//      //margin-left: $grid-col;
-//      margin-left: $grid-col * 2 / 3;
-//    }
-//  }
-//}
-//
-//#og3 {
-//
-//  @include respond-to(medium) {
-//
-//    h1 {
-//      right: auto;
-//      left: $grid-double-col + $grid-gap + 95px; // 485px;
-//      top: auto;
-//      bottom: -11px;
-//    }
-//    ul {
-//      margin-left: $grid-double-col + $grid-gap + 85px; // 475px
-//    }
-//  }
-//
-//  //
-//  // Contentpage
-//  .content & {
-//    @include respond-to(medium) {
-//
-//      h1 {
-//        right: auto;
-//        left: 95px;
-//        top: auto;
-//        bottom: -11px;
-//      }
-//
-//      ul {
-//        margin-left: 85px;
-//      }
-//    }
-//  }
-//}

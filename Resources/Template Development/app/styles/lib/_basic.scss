@@ -46,4 +46,8 @@ a:hover {
 }
 
 #content {
+  overflow-x: hidden;
+}
+start #content {
+  overflow: hidden;
 }
